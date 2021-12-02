@@ -63,3 +63,12 @@ python drone.py --id drone-3 --type drone-c
 ### 🗺️ Topology
 
 ![ADCS Software Topology](https://user-images.githubusercontent.com/24422019/144341602-86e17ae4-3991-470f-9d56-b5dd3ac18941.png)
+
+
+### 🏃‍♂️ The Drone Runtime
+
+Drone runtime used to simulate the data that sent from each drone available. This runtime also accept the action from Commander Server such as status synchronization and update location.
+
+### 🏃‍♂️ The Commander Server Runtime
+
+Commander server runtime is used to command a specific drone for some action. This runtime is also used to publish the data that sent from Drone runtime to the ADCS Backend Server via RESTful API.
