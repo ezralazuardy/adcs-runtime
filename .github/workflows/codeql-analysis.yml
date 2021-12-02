@@ -1,0 +1,34 @@
+name: "CodeQL"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '16 2 * * 1'
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: ["python"]
+
+    steps:
+      - name: 📥 Install Github Action Checkout
+        uses: actions/checkout@v2
+
+      - name: 📥 Install CodeQL Analysis
+        uses: github/codeql-action/init@v1
+        with:
+          languages: ${{ matrix.language }}
+
+      - name: 🔨 Run CodeQL Auto Build
+        uses: github/codeql-action/autobuild@v1
+
+      - name: 🔍 Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v1
