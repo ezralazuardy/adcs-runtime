@@ -14,7 +14,7 @@ A simple virtual runtime for Automated Autonomous Drone Communication System.
 
 This repository contains python script to simulate the several ADCS components runtime such as Drone processes and Commander Server process.
 
-ADCS Backend repository is accesible at https://adcs.ezralazuardy.com.
+ADCS Manager & Backend Server repository is accesible at https://adcs.ezralazuardy.com.
 
 ### ✅ Prerequisites
 
@@ -56,3 +56,7 @@ python drone.py --id drone-1 --type drone-a
 python drone.py --id drone-2 --type drone-b
 python drone.py --id drone-3 --type drone-c
 ```
+
+### 🗺️ Topology
+
+![ADCS Software Topology](https://user-images.githubusercontent.com/24422019/144341602-86e17ae4-3991-470f-9d56-b5dd3ac18941.png)
