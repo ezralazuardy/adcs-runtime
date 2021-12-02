@@ -1,3 +1,6 @@
+<a href="https://github.com/ezralazuardy/adcs-runtime/actions/workflows/codeql-analysis.yml">
+  <img src="https://img.shields.io/github/workflow/status/ezralazuardy/adcs-runtime/CodeQL?label=security" alt="Security">
+</a>
 <a href="https://www.python.org">
     <img alt="Python Version" src="https://img.shields.io/badge/python-%3E%3D%203-blue">
 </a>
